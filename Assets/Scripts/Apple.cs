@@ -30,8 +30,8 @@ public class Apple : MonoBehaviour
         if (other.gameObject.CompareTag(GameConstants.PlayerTag) && !hasCollided)
         {
             hasCollided = true;
-            Destroy(gameObject);
             ReverseGravityOnPlayer(other);
+            Destroy(gameObject);
         }
     }
 

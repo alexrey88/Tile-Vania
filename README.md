@@ -15,3 +15,5 @@ The following features were added outside of the course, showcasing additional c
 - **Secret Door:** Implemented a secret door feature, enhancing the exploration aspect of the game.
 
 - **Enhanced Sound Effects:** Expanded the audio experience with additional sound effects for actions such as bouncing and enemy eliminations for a more immersive gaming experience.
+
+- **Improved Enemy Killing:** Ensured that bullets can only eliminate enemies within the player's view.
