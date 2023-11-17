@@ -2,7 +2,10 @@
 Library/
 Temp/
 obj/
+Logs/
 Build/
+Builds/
+ProjectSettings/
 UnityGenerated/
 
 # Visual Studio / MonoDevelop generated files
