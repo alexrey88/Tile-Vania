@@ -69,11 +69,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump()
     {
-        if (playerIsInTheAir()) { return; }
+        if (PlayerIsInTheAir()) { return; }
         playerRigidBody.velocity += new Vector2(0f, Mathf.Sign(transform.localScale.y) * jumpSpeed);
     }
 
-    bool playerIsInTheAir()
+    bool PlayerIsInTheAir()
     {
         return !playerBody.IsTouchingLayers(LayerMask.GetMask(GameConstants.ClimbingLayerName,
                                                             GameConstants.GroundLayerName,

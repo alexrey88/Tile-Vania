@@ -30,15 +30,15 @@ public class Apple : MonoBehaviour
         if (other.gameObject.CompareTag(GameConstants.PlayerTag) && !hasCollided)
         {
             hasCollided = true;
-            ReverseGravityOnPlayer(other);
+            ReverseGravityOnPlayer();
             Destroy(gameObject);
         }
     }
 
-    void ReverseGravityOnPlayer(Collider2D other)
+    void ReverseGravityOnPlayer()
     {
-        Vector2 newLocalScale = new Vector2(other.transform.localScale.x, -other.transform.localScale.y);
-        other.transform.localScale = newLocalScale;
+        Vector2 newLocalScale = new Vector2(player.transform.localScale.x, -player.transform.localScale.y);
+        player.transform.localScale = newLocalScale;
         playerRigidBody.gravityScale = -playerRigidBody.gravityScale;
     }
 }
