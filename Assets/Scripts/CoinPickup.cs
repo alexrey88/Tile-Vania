@@ -14,13 +14,13 @@ public class CoinPickup : MonoBehaviour
         {
             onCoinPickup.AddListener(() => GameSession.Instance.AddToScore(pointsForCoinPickup));
         }
-        else { Debug.LogError("GameSession.Instance not found!"); }
+        else { Debug.LogError("GameSession.Instance not found."); }
 
         if (AudioPlayer.Instance != null)
         {
             onCoinPickup.AddListener(AudioPlayer.Instance.PlayCoinPickupClip);
         }
-        else { Debug.LogError("AudioPlayer.Instance not found!"); }
+        else { Debug.LogError("AudioPlayer.Instance not found."); }
     }
 
     void OnTriggerEnter2D(Collider2D other)
